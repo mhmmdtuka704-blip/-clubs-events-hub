@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router';
 import { useApp } from '../context/AppContext.jsx';
 import { categoryKey, filterEvents } from '../lib/events.js';
+import { eventHasStarted } from '../lib/model.js';
 import EventCard from '../components/EventCard.jsx';
 import Icon from '../components/Icon.jsx';
 import { NotFound } from './StatusPages.jsx';
@@ -10,7 +11,10 @@ export default function ClubDetails() {
   const { events, clubs } = useApp();
   const club = clubs.find((c) => c.id === clubId);
   if (!club) return <NotFound entity="club" />;
-  const clubEvents = filterEvents(events, { club: club.id });
+  const now = new Date();
+  const clubEvents = filterEvents(events, { club: club.id }).filter(
+    (event) => !eventHasStarted(event, now),
+  );
   return (
     <div className="container page-shell">
       <Link className="text-link breadcrumb" to="/#clubs">
