@@ -86,6 +86,8 @@ The table records the team's agreed page ownership. Pull requests document compl
 
 - **Create/Edit Event and My Events & RSVPs.** The dashboard shows booked places, and the edit form shows the minimum capacity based on current RSVPs. [PR #1](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/1)
 
+- **Homepage and Club Details — Mohammad Bliek.** The homepage features the earliest event that has yet to start. Club pages list upcoming events in chronological order, with matching counts and an empty state. [PR #2](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/2)
+
 ## Project notes
 
 [Verification record](docs/TESTING.md) · [Requirements map](docs/REQUIREMENTS.md) · [Submission links](docs/SUBMISSION.md)
