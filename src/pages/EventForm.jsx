@@ -28,7 +28,7 @@ export default function EventForm() {
 }
 
 function EventEditor({ event }) {
-  const { clubs, execute, notify } = useApp();
+  const { clubs, rsvps, execute, notify } = useApp();
   const navigate = useNavigate();
   const formRef = useRef(null);
   const [values, setValues] = useState(
@@ -49,6 +49,7 @@ function EventEditor({ event }) {
   );
   const [errors, setErrors] = useState({});
   const [error, setError] = useState('');
+  const rsvpCount = event ? rsvps.filter((rsvp) => rsvp.eventId === event.id).length : 0;
   const field = (name) => ({
     value: values[name],
     onChange: (change) => {
@@ -188,9 +189,14 @@ function EventEditor({ event }) {
               name="capacity"
               label="Student capacity *"
               type="number"
-              min={1}
+              min={Math.max(1, rsvpCount)}
               max={500}
               step={1}
+              hint={
+                rsvpCount > 0
+                  ? `Minimum capacity is ${rsvpCount} based on current RSVPs.`
+                  : undefined
+              }
               required
               {...field('capacity')}
             />

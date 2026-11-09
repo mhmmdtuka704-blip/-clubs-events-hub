@@ -111,6 +111,7 @@ export default function Dashboard() {
           <div className="dashboard-list">
             {displayed.map((event) => {
               const club = clubs.find((club) => club.id === event.clubId);
+              const rsvpCount = rsvps.filter((rsvp) => rsvp.eventId === event.id).length;
               return (
                 <article className="dashboard-event" key={event.id}>
                   <Link
@@ -137,6 +138,14 @@ export default function Dashboard() {
                       <Icon name="pin" size={15} />
                       {event.location}
                     </p>
+                    {tab === 'created' && (
+                      <p>
+                        <Icon name="users" size={15} />
+                        <span>
+                          {rsvpCount} of {event.capacity} places booked
+                        </span>
+                      </p>
+                    )}
                     {eventHasStarted(event) && (
                       <small className="muted">This event has started.</small>
                     )}
