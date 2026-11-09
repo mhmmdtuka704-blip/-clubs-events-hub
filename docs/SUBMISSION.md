@@ -14,14 +14,13 @@ The application is deployed with public access, enabled at the owner's request o
 - Shared mock accounts, events and RSVPs with working interactions.
 - Validated forms, event CRUD, RSVP/cancellation and user-specific dashboard.
 - Theme toggle, show/hide interactions, navigation and basic accessibility.
-- README with team names, topic, entities, setup instructions, screenshots and mock-data explanation.
+- README with team names, topic, entities, setup instructions, screenshots, mock-data explanation, and the approved split of two views per member.
 - Tests, formatted source, hosting configuration and a CI workflow.
 
 ## Final team actions
 
-1. Choose the four bucket owners and replace the unassigned README entries with actual names and contributions.
-2. Ensure each member's own branch and meaningful commits demonstrate their contribution.
-3. Verify the application and repository links from an instructor-accessible browser session.
-4. Submit the two URLs on Blackboard. Keep the comprehensive README in the repository.
+1. Each member should use their own GitHub account to commit meaningful work on their assigned views. Use a branch and pull request so the changes can be reviewed.
+2. Add each member's completed work and links to their commits or pull requests to the README.
+3. Submit the two URLs on Blackboard.
 
 No separate Word report is required by the supplied Phase 1 brief.

@@ -23,8 +23,8 @@ This maps the supplied CSC443 brief and the Clubs & Events Hub topic card to the
 | README content                               | Team names, topic/entities, app URL, setup, screenshots, mock-data explanation and contribution table                         |
 | Live deployed frontend                       | Hosted demo linked in `SUBMISSION.md`; public access enabled on 27 October 2026                                               |
 | Public GitHub repository                     | Public repository linked in SUBMISSION.md; contains the source, README, screenshots and verification setup                    |
-| Four members, two views each                 | Four unassigned buckets in README; team must choose owners and record actual contributions                                    |
-| Meaningful commits and branches              | Git initialized and generated source committed; each member still needs their own demonstrable work and Git history           |
+| Four members, two views each                 | The README lists the approved owners and two views per member.                                                                |
+| Meaningful commits and branches              | The source is on GitHub. Each member should commit their own work and link to it from the README.                             |
 
 Creator-only edit/delete checks are included in the frontend demonstration, anticipating the topic card's Phase 2 ownership rule. Real authorization and persistence remain Phase 2 backend work.
 

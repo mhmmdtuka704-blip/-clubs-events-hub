@@ -71,16 +71,18 @@ The frontend uses React, React Router, Tailwind CSS, and Vite. Reusable cards, f
 
 [Event filters](docs/screenshots/events.png) · [Event details](docs/screenshots/event-details-rsvp.png) · [Club details](docs/screenshots/club.png) · [Event form](docs/screenshots/event-form.png) · [Login](docs/screenshots/login.png) · [Registration validation](docs/screenshots/register-validation.png) · [Mobile layout](docs/screenshots/mobile-home.png)
 
-## Team contributions
+## Team responsibilities
 
-Page owners and individual contributions are pending the team's decision.
+Each team member owns two views. Mohammad Touka also coordinates how event and RSVP changes reach the dashboard.
 
-| Bucket | Two views                               | Owner   | Contributions |
-| ------ | --------------------------------------- | ------- | ------------- |
-| A      | Homepage and Club Details               | Pending | Pending       |
-| B      | Event List and Event Details            | Pending | Pending       |
-| C      | Create/Edit Event and My Events & RSVPs | Pending | Pending       |
-| D      | Login and Register                      | Pending | Pending       |
+| Team member    | Views                                   | Responsibilities                                                                   |
+| -------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
+| Mohammad Touka | Create/Edit Event and My Events & RSVPs | Event form validation, event management, and keeping the dashboard in sync.        |
+| Zeid           | Event List and Event Details            | Search, filters, event information, and RSVP controls.                             |
+| Mohammad Bliek | Homepage and Club Details               | This week's events, club profiles, and links from clubs to their events.           |
+| Badih          | Login and Register                      | Mock accounts, form validation, and returning users to the right page after login. |
+
+The table records the team's agreed page ownership. Individual implementation work is recorded through commits and pull requests as it is completed.
 
 ## Project notes
 
