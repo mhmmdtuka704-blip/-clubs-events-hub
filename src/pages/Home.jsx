@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { useApp } from '../context/AppContext.jsx';
 import { categoryKey, displayDate, filterEvents } from '../lib/events.js';
+import { eventHasStarted } from '../lib/model.js';
 import EventCard, { EventArtwork } from '../components/EventCard.jsx';
 import Icon from '../components/Icon.jsx';
 
@@ -10,7 +11,8 @@ export default function Home() {
   const navigate = useNavigate();
   const [query, setQuery] = useState('');
   const weekEvents = filterEvents(events, { period: 'week' });
-  const featured = filterEvents(events)[0];
+  const now = new Date();
+  const featured = filterEvents(events).find((event) => !eventHasStarted(event, now));
   const featuredClub = clubs.find((c) => c.id === featured?.clubId);
   return (
     <>

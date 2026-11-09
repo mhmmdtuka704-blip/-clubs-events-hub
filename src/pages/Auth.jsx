@@ -106,7 +106,7 @@ function AuthForm({ register }) {
               {...field('name')}
             />
           )}
-          <FormField 
+          <FormField
             name="email"
             label="Email address"
             type="email"
@@ -136,7 +136,7 @@ function AuthForm({ register }) {
               aria-pressed={visiblePassword}
               onClick={() => setVisiblePassword((value) => !value)}
             >
-              { visiblePassword ? 'Hide' : 'Show' }
+              {visiblePassword ? 'Hide' : 'Show'}
             </button>
           </div>
           {register && (
@@ -193,8 +193,8 @@ function AuthForm({ register }) {
 }
 
 export function Login() {
-  return <AuthForm key="login" register={false}  />;
+  return <AuthForm key="login" register={false} />;
 }
 export function Register() {
-  return <AuthForm key="register" register  />;
+  return <AuthForm key="register" register />;
 }
