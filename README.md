@@ -79,7 +79,7 @@ Each team member owns two views. Mohammad Touka also coordinates how event and R
 | -------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
 | Mohammad Touka | Create/Edit Event and My Events & RSVPs | Event form validation, event management, and keeping the dashboard in sync.        |
 | Zeid           | Event List and Event Details            | Search, filters, event information, and RSVP controls.                             |
-| Mohamad Bleik | Homepage and Club Details               | This week's events, club profiles, and links from clubs to their events.           |
+| Mohamad Bleik  | Homepage and Club Details               | This week's events, club profiles, and links from clubs to their events.           |
 | Badih          | Login and Register                      | Mock accounts, form validation, and returning users to the right page after login. |
 
 The table records the team's agreed page ownership. Pull requests document completed changes.
