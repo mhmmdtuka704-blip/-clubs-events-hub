@@ -6,9 +6,7 @@ Mohammad Touka, Zeid, Mohammad Bliek, and Badih
 
 Clubs & Events Hub is our assigned project topic. Students can discover campus events and RSVP. Event creators can publish, edit, and delete their own events.
 
-[GitHub repository](https://github.com/mhmmdtuka704-blip/-clubs-events-hub)
-
-The live link will be added here after the GitHub Pages deployment is verified.
+[Live website](https://mhmmdtuka704-blip.github.io/-clubs-events-hub/) · [GitHub repository](https://github.com/mhmmdtuka704-blip/-clubs-events-hub)
 
 ## Run locally
 
