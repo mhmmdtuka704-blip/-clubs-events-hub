@@ -93,14 +93,14 @@ export function validateEvent(values, { now = new Date(), minimumCapacity = 0 } 
   if (!clubs.some((club) => club.id === event.clubId))
     fields.clubId = 'Choose one of the available clubs.';
   if (!categories.includes(event.category)) fields.category = 'Choose an available category.';
-  const start = new Date(`${event.date}T${event.time}`);
+  const day = new Date(`${event.date}T12:00:00`);
   const validDate =
     /^\d{4}-\d{2}-\d{2}$/.test(event.date) &&
-    !Number.isNaN(start.valueOf()) &&
-    localDate(start) === event.date;
+    !Number.isNaN(day.valueOf()) &&
+    localDate(day) === event.date;
   if (!validDate) fields.date = 'Choose a valid calendar date.';
   if (!/^([01]\d|2[0-3]):[0-5]\d$/.test(event.time)) fields.time = 'Choose a valid time.';
-  if (validDate && !fields.time && start <= now)
+  if (validDate && !fields.time && eventHasStarted(event, now))
     fields.date = 'Choose an event date and time in the future.';
   if (!Number.isInteger(event.capacity) || event.capacity < 1 || event.capacity > 500)
     fields.capacity = 'Capacity must be a whole number between 1 and 500.';

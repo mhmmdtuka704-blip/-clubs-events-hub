@@ -1,13 +1,21 @@
 # Phase 1 verification record
 
-Browser journey verified on 26 October 2026; release checks repeated on 27 October 2026. Publishing status is kept in SUBMISSION.md.
+The original browser checks ran on 26 October 2026. The revised production build was tested locally on 9 November 2026.
 
 ## Automated checks
 
-- 35 business-logic tests: date/week/year boundaries, intersecting filters, mock-data relationships, registration, login/logout, validation, ownership, duplicate/capacity checks, cancellation, deletion cleanup, immutability and safe return navigation.
+- 36 tests cover calendar boundaries, combined filters, mock data, account forms, event validation, ownership, RSVP limits and deletion cleanup.
 - Production Vite build.
 - Prettier source-format check.
 - A GitHub Actions workflow runs the same checks on pushes to main and pull requests. Check the Actions tab for the latest hosted result.
+
+## 9 November browser retest
+
+- Opened all eight views in the local production build. Tested home search, combined filters, reset, event notes, and the link from an event to its club.
+- Tried blank registration and a password mismatch, then created a test account. Tested blank login, a protected route, and Maya's dashboard.
+- Created an event without notes, added an RSVP, and edited its title. Confirmed that cancelling deletion kept the event and confirming deletion removed the event and its RSVP.
+- Confirmed a valid date stays valid when time is missing. Confirmed the optional notes panel only appears when there are notes.
+- Checked theme switching, mobile navigation, and dashboard arrow keys. Checked the homepage, event form, and dashboard at 390px, plus the calendar at 768px and 1280px. These layouts had no horizontal overflow.
 
 ## Hosted production smoke check
 

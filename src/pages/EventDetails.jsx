@@ -67,14 +67,16 @@ export default function EventDetails() {
           <section className="prose-section">
             <h2>About this event</h2>
             <p>{event.description}</p>
-            <details className="event-details-disclosure">
-              <summary>What to know before you go</summary>
-              <ul>
-                {event.bring.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
-            </details>
+            {event.bring.length > 0 && (
+              <details className="event-details-disclosure">
+                <summary>What to know before you go</summary>
+                <ul>
+                  {event.bring.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              </details>
+            )}
           </section>
           <section className="host-section">
             <p className="eyebrow">BROUGHT TO YOU BY</p>

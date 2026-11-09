@@ -135,6 +135,12 @@ test('invalid calendar dates and past or malformed times are rejected', () => {
   ])
     assert.throws(() => validateEvent(values, { now }), AppError);
 });
+test('a missing time leaves a valid date unmarked', () => {
+  assert.throws(
+    () => validateEvent({ ...validEvent, time: '' }, { now }),
+    (error) => error instanceof AppError && Object.keys(error.fields).join() === 'time',
+  );
+});
 test('unknown clubs, categories and invalid capacities are rejected', () => {
   for (const values of [
     { ...validEvent, clubId: 'missing' },
