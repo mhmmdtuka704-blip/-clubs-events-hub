@@ -2,7 +2,7 @@
 
 **CSC443 · Phase 1 · Team Async Await**
 
-Mohammad Touka, Zeid, Mohammad Bliek, and Badih
+Mohammad Touka, Zeid, Mohamad Bleik, and Badih
 
 Clubs & Events Hub is our assigned project topic. Students can discover campus events and RSVP. Event creators can publish, edit, and delete their own events.
 
@@ -79,14 +79,14 @@ Each team member owns two views. Mohammad Touka also coordinates how event and R
 | -------------- | --------------------------------------- | ---------------------------------------------------------------------------------- |
 | Mohammad Touka | Create/Edit Event and My Events & RSVPs | Event form validation, event management, and keeping the dashboard in sync.        |
 | Zeid           | Event List and Event Details            | Search, filters, event information, and RSVP controls.                             |
-| Mohammad Bliek | Homepage and Club Details               | This week's events, club profiles, and links from clubs to their events.           |
+| Mohamad Bleik | Homepage and Club Details               | This week's events, club profiles, and links from clubs to their events.           |
 | Badih          | Login and Register                      | Mock accounts, form validation, and returning users to the right page after login. |
 
 The table records the team's agreed page ownership. Pull requests document completed changes.
 
 - **Create/Edit Event and My Events & RSVPs.** The dashboard shows booked places, and the edit form shows the minimum capacity based on current RSVPs. [PR #1](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/1)
 
-- **Homepage and Club Details — Mohammad Bliek.** The homepage features the earliest event that has yet to start. Club pages list upcoming events in chronological order, with matching counts and an empty state. [PR #2](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/2)
+- **Homepage and Club Details — Mohamad Bleik.** The homepage features the earliest event that has yet to start. Club pages list upcoming events in chronological order, with matching counts and an empty state. [PR #2](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/2)
 
 ## Project notes
 
