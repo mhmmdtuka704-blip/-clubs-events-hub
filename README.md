@@ -82,7 +82,9 @@ Each team member owns two views. Mohammad Touka also coordinates how event and R
 | Mohammad Bliek | Homepage and Club Details               | This week's events, club profiles, and links from clubs to their events.           |
 | Badih          | Login and Register                      | Mock accounts, form validation, and returning users to the right page after login. |
 
-The table records the team's agreed page ownership. Individual implementation work is recorded through commits and pull requests as it is completed.
+The table records the team's agreed page ownership. Pull requests document completed changes.
+
+- **Create/Edit Event and My Events & RSVPs.** The dashboard shows booked places, and the edit form shows the minimum capacity based on current RSVPs. [PR #1](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/1)
 
 ## Project notes
 
