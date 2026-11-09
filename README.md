@@ -6,7 +6,9 @@ Mohammad Touka, Zeid, Mohammad Bliek, and Badih
 
 Clubs & Events Hub is our assigned project topic. Students can discover campus events and RSVP. Event creators can publish, edit, and delete their own events.
 
-[Live website](https://csc443-campus-hub-async-await-2026.mhmddddd.chatgpt.site/) · [GitHub repository](https://github.com/mhmmdtuka704-blip/-clubs-events-hub)
+[GitHub repository](https://github.com/mhmmdtuka704-blip/-clubs-events-hub)
+
+The live link will be added here after the GitHub Pages deployment is verified.
 
 ## Run locally
 

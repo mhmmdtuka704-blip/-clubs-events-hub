@@ -21,7 +21,7 @@ This maps the supplied CSC443 brief and the Clubs & Events Hub topic card to the
 | Accessibility and clean code                 | Semantic regions, labels/errors, keyboard tabs, focus handling, SVG descriptions, reusable components and pure business logic |
 | Mobile, tablet and desktop                   | Actual screenshots and observed responsive checks in `TESTING.md`                                                             |
 | README content                               | Team names, topic/entities, app URL, setup, screenshots, mock-data explanation and contribution table                         |
-| Live deployed frontend                       | Hosted demo linked in `SUBMISSION.md`; public access enabled on 27 October 2026                                               |
+| Live deployed frontend                       | GitHub Pages deployment pending. See `SUBMISSION.md`.                                                                         |
 | Public GitHub repository                     | Public repository linked in SUBMISSION.md; contains the source, README, screenshots and verification setup                    |
 | Four members, two views each                 | The README lists the approved owners and two views per member.                                                                |
 | Meaningful commits and branches              | The source is on GitHub. Each member should commit their own work and link to it from the README.                             |
