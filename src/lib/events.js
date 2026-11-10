@@ -12,18 +12,20 @@ export function weekRange(now = new Date()) {
 }
 
 export function filterEvents(events, filters = {}, now = new Date()) {
-  const q = (filters.q || '').trim().toLowerCase();
+  const words = (filters.q || '').trim().toLowerCase().split(/\s+/).filter(Boolean);
   const week = weekRange(now);
   return events
-    .filter(
-      (event) =>
-        (!q || `${event.title} ${event.summary} ${event.location}`.toLowerCase().includes(q)) &&
+    .filter((event) => {
+      const searchable = `${event.title} ${event.summary} ${event.location}`.toLowerCase();
+      return (
+        words.every((word) => searchable.includes(word)) &&
         (!filters.club || event.clubId === filters.club) &&
         (!filters.category || event.category === filters.category) &&
         (!filters.date || event.date === filters.date) &&
         (filters.period !== 'week' || (event.date >= week.start && event.date < week.end)) &&
-        (filters.period !== 'today' || event.date === localDate(now)),
-    )
+        (filters.period !== 'today' || event.date === localDate(now))
+      );
+    })
     .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`));
 }
 
