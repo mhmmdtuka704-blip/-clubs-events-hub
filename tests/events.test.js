@@ -96,3 +96,19 @@ test('local dates and 12-hour time formatting handle boundary cases', () => {
   assert.equal(displayTime('12:00'), '12:00 PM');
   assert.equal(displayTime('17:30'), '5:30 PM');
 });
+
+test('search matches query words in any order, across fields, with unmatched words, and with club filter', () => {
+  assert.deepEqual(
+    filterEvents(records, { q: 'workshop web' }).map((e) => e.id),
+    ['match', 'outside'],
+  );
+  assert.deepEqual(
+    filterEvents(records, { q: '  build   lab  ' }).map((e) => e.id),
+    ['match', 'outside'],
+  );
+  assert.deepEqual(filterEvents(records, { q: 'web missing' }), []);
+  assert.deepEqual(
+    filterEvents(records, { q: 'web', club: 'arts' }).map((e) => e.id),
+    ['wrong-club'],
+  );
+});
