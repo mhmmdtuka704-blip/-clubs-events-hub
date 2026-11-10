@@ -90,6 +90,8 @@ The table records the team's agreed page ownership. Pull requests document compl
 
 - **Event List and Event Details** – Zeid. Updated event search to support multi-word, cross-field matching in any order. [PR #3](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/3)
 
+- **Login and Register** — Badih. Register's Show/Hide button now controls both password fields, while Login still controls its single password field. [PR #4](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/4)
+
 ## Project notes
 
 [Verification record](docs/TESTING.md) · [Requirements map](docs/REQUIREMENTS.md) · [Submission links](docs/SUBMISSION.md)
