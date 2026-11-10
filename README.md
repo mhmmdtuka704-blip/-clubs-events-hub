@@ -88,6 +88,8 @@ The table records the team's agreed page ownership. Pull requests document compl
 
 - **Homepage and Club Details — Mohamad Bleik.** The homepage features the earliest event that has yet to start. Club pages list upcoming events in chronological order, with matching counts and an empty state. [PR #2](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/2)
 
+- **Event List and Event Details** – Zeid. Updated event search to support multi-word, cross-field matching in any order. [PR #3](https://github.com/mhmmdtuka704-blip/-clubs-events-hub/pull/3)
+
 ## Project notes
 
 [Verification record](docs/TESTING.md) · [Requirements map](docs/REQUIREMENTS.md) · [Submission links](docs/SUBMISSION.md)
