@@ -132,7 +132,7 @@ function AuthForm({ register }) {
             <button
               type="button"
               className="password-toggle"
-              aria-label={visiblePassword ? 'Hide password' : 'Show password'}
+              aria-label={`${visiblePassword ? 'Hide' : 'Show'} ${register ? 'passwords' : 'password'}`}
               aria-pressed={visiblePassword}
               onClick={() => setVisiblePassword((value) => !value)}
             >
@@ -143,7 +143,7 @@ function AuthForm({ register }) {
             <FormField
               name="confirmPassword"
               label="Confirm password"
-              type="password"
+              type={visiblePassword ? 'text' : 'password'}
               autoComplete="new-password"
               required
               maxLength={128}
